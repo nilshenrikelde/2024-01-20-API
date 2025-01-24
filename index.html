@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soloppgang og solnedgang i hele verden</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <img src="assets/sun.jpg" alt="Sun" class="round-image" />
+    <h1>Soloppgang og solnedgang i hele verden</h1>
+    <form id="city-form">
+      <label for="city">Skriv inn lokasjon:</label>
+      <input
+        type="text"
+        id="city"
+        name="city"
+        placeholder="F.eks. Huglo"
+        required
+      />
+      <button type="submit">Vis soloppgang/nedgang</button>
+    </form>
+    <div id="result"></div>
+  </body>
+</html>
