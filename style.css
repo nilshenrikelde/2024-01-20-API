@@ -149,4 +149,5 @@ button:hover {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1.25rem;
+  aspect-ratio: 1 / 1; /* Ensure the image is always perfectly round */
 }
