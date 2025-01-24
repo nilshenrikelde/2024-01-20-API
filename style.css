@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #ffccaa, #ff9999); /* Darker tone */
@@ -13,46 +19,46 @@ body {
 }
 
 h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 form {
   background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.25rem;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   color: #555;
 }
 
 input {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
 }
 
 input[type="text"] {
-  width: calc(100% - 20px); /* Make input field slightly smaller */
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: calc(100% - 1.25rem); /* Make input field slightly smaller */
+  padding: 0.625rem;
+  margin-right: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   background-color: #ff6f61;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
 }
 
@@ -64,10 +70,10 @@ button:hover {
 #result {
   display: none;
   background-color: white;
-  padding: 20px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  margin-top: 20px;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #ccc;
+  margin-top: 1.25rem;
 }
 
 /* Show the result box when it has content */
@@ -76,7 +82,7 @@ button:hover {
 }
 
 #result p {
-  margin: 5px 0;
+  margin: 0.3125rem 0;
   color: #333;
 }
 
@@ -84,40 +90,41 @@ button:hover {
 #longitude,
 #result p:nth-child(4), /* Soloppgang */
 #result p:nth-child(5)  /* Solnedgang */ {
-  font-size: 2em; /* Dobbel størrelse */
+  font-size: 2rem; /* Double size */
 }
 
 #location-info {
   background-color: white;
-  padding: 20px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  margin-top: 20px;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #ccc;
+  margin-top: 1.25rem;
 }
 
 #location-info p {
-  margin: 5px 0;
+  margin: 0.3125rem 0;
   color: #333;
 }
 
 #date-info {
   background-color: white;
-  padding: 20px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  margin-top: 20px;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #ccc;
+  margin-top: 1.25rem;
 }
 
 #date-info p {
-  margin: 5px 0;
+  margin: 0.3125rem 0;
   color: #333;
   font-weight: bold; /* Make text bold */
 }
 
-/* Responsiv design */
+/* Responsive design */
 @media (max-width: 600px) {
   body {
-    padding: 10px;
+    height: 100vh;
+    padding: 0.625rem;
   }
 
   form {
@@ -126,20 +133,20 @@ button:hover {
   }
 
   input[type="text"] {
-    width: calc(100% - 120px);
-    margin-right: 10px;
+    width: calc(100% - 7.5rem);
+    margin-right: 0.625rem;
   }
 
   button {
-    width: 100px;
-    margin-top: 10px;
+    width: 6.25rem;
+    margin-top: 0.625rem;
   }
 }
 
 .round-image {
-  width: 200px;
-  height: 200px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
